@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.gwnu.mapper.MemberMapper">
+
+<!--    <resultMap id="Student" type="kr.ac.gwnu.model.Student">-->
+<!--        <result column="id" property="id"/>-->
+<!--        <result column="email" property="email"/>-->
+<!--        <result column="age" property="age"/>-->
+<!--    </resultMap>-->
+
+<!--    <insert id="insertStudent" parameterType="kr.ac.gwnu.model.Student">-->
+<!--        INSERT INTO student (id email, age) VALUES(#{id}, #{email} ,#{age})-->
+<!--    </insert>-->
+
+    <insert id="insertStudents" parameterType="java.util.List">
+        INSERT INTO student (id, email, age) VALUES
+        <foreach collection="list" item="item" separator=" , ">
+            (#{item.id}, #{item.email}, #{item.age})
+        </foreach>
+    </insert>
+
+    <select id="selectStudent" parameterType="kr.ac.gwnu.model.Student">
+        SELECT * from student
+    </select>
+
+    <select id="countStudent" parameterType="kr.ac.gwnu.model.Student" >
+        select count(id) as number_of_id from student where id = #{id}
+    </select>
+
+    <select id="existsStudent" parameterType="kr.ac.gwnu.model.Student" resultType="boolean">
+<!--        select exists( select * from student where id = #{id} )-->
+        select exists (select id from student where id=#{id})::int;
+    </select>
+
+
+<!--    <resultMap id="Teacher" type="kr.ac.gwnu.model.Teacher">-->
+<!--        <result column="id" property="id"/>-->
+<!--        <result column="email" property="email"/>-->
+<!--    </resultMap>-->
+
+    <insert id="insertTeacher" parameterType="kr.ac.gwnu.model.Teacher">
+        INSERT INTO teacher (id, email) VALUES(#{id}, #{email})
+    </insert>
+
+    <select id="existsTeacher" parameterType="kr.ac.gwnu.model.Teacher" resultType="boolean">
+        <!--        select exists( select * from student where id = #{id} )-->
+        select exists (select id from teacher where id=#{id})::int;
+    </select>
+
+
+
+</mapper>

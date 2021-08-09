@@ -1,0 +1,33 @@
+e[2021-08-01 11:59:26:12119][http-nio-8080-exec-1] INFO  o.s.web.servlet.Dispatcher  Servlet - Initializing Servlet 'dispatcherServlet'
+[2021-08-01 11:59:26:12124][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2021-08-01 12:11:40:5465][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-08-01 12:11:40:5466][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2021-08-01 12:12:56:6870][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-08-01 12:12:56:6871][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2021-08-01 12:17:06:6691][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-08-01 12:17:06:6692][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2021-08-01 12:20:25:4323][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-08-01 12:20:25:4324][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2021-08-01 12:21:36:3035][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2021-08-01 12:21:36:3097][main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+[2021-08-01 12:21:36:3118][main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2021-08-01 12:21:52:19109][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-08-01 12:21:52:19109][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+[2021-08-01 12:21:52:19109][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[2021-08-01 12:21:52:19109][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+[2021-08-01 12:21:52:19110][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e5b33e5
+[2021-08-01 12:21:52:19110][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3e4f2300
+[2021-08-01 12:21:52:19110][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2021-08-01 12:21:52:19110][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2021-08-01 12:21:52:19120][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/student/register", parameters={}
+[2021-08-01 12:21:52:19124][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to kr.ac.gwnu.controller.StudentController#register(List)
+[2021-08-01 12:21:52:19235][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [[Student(id=huiji, email=gmlwl0720@naver.com, age=22), Student(id=jihyeon, email=jhjh123@naver.com,  (truncated)...]
+[2021-08-01 12:21:52:19258][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[2021-08-01 12:21:52:19258][http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+[2021-08-01 12:21:52:19260][http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+[2021-08-01 12:21:52:19263][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/teacher/register", parameters={}
+[2021-08-01 12:21:52:19263][http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to kr.ac.gwnu.controller.TeacherController#register(Teacher)
+[2021-08-01 12:21:52:19264][http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [kr.ac.gwnu.model.Teacher@110ea9de]
+[2021-08-01 12:21:52:19346][http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[2021-08-01 12:21:52:19346][http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+[2021-08-01 12:21:52:19346][http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
