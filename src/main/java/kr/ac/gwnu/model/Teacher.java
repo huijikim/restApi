@@ -13,15 +13,14 @@ import java.util.List;
 public class Teacher {
     private String id;
     private String email;
+    List<Student> students;
 
-    @Getter
-    @AllArgsConstructor
-    @Builder
-    public static class Student {
-        private String id;
-        private String name;
-        private Integer age;
-    }
 
+//    public class Outer{
+//        Student student;
+//        public Outer(){
+//            Student student;
+//        }
+//    }
 
 }
