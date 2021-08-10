@@ -3,6 +3,7 @@ package kr.ac.gwnu.model;
 import lombok.*;
 import org.apache.ibatis.javassist.runtime.Inner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
@@ -13,8 +14,7 @@ import java.util.List;
 public class Teacher {
     private String id;
     private String email;
-    List<Student> students;
-
+    private ArrayList<Student> studentArrayList = new ArrayList<>();
 
 //    public class Outer{
 //        Student student;

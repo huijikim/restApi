@@ -28,7 +28,7 @@ public class TeacherController {
 
         System.out.println("here");
         System.out.println(teacher.getId());
-        System.out.println(teacher.getStudents());
+        System.out.println(teacher.getStudentArrayList());
 
         try {
             memberService.registerTeacher(teacher);

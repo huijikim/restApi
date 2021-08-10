@@ -2,14 +2,16 @@ package kr.ac.gwnu.model;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 //파라미터가 없는 생성자를 생성
-//@NoArgsConstructor
+@NoArgsConstructor
 //클래스에 존재하는 모든 필드에 대한 생성자를 자동 생성
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
-public class Student {
+public class Student implements Serializable {
     private String id;
     private String email;
     private Integer age;
