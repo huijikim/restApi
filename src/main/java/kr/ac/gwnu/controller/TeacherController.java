@@ -1,5 +1,6 @@
 package kr.ac.gwnu.controller;
 
+import kr.ac.gwnu.model.Student;
 import kr.ac.gwnu.model.Teacher;
 import kr.ac.gwnu.service.MemberService;
 import org.slf4j.Logger;
@@ -33,9 +34,16 @@ public class TeacherController {
         try {
             memberService.registerTeacher(teacher);
         } catch (Exception e) {
-            logger.debug(e.getMessage(), e);
+            logger.error(e.getMessage(), e);
             logger.debug("cannot register to registerTeacher!!");
         }
+
+//        try {
+//            memberService.registerStudent(teacher.getStudentArrayList());
+//        } catch (Exception e) {
+//            logger.error(e.getMessage(), e);
+//            logger.debug("cannot register to registerStudent!!");
+//        }
 
     }
 }

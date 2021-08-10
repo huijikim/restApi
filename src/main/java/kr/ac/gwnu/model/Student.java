@@ -2,6 +2,9 @@ package kr.ac.gwnu.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 //파라미터가 없는 생성자를 생성
@@ -11,7 +14,11 @@ import java.io.Serializable;
 @Getter
 @Setter
 @ToString
+@Entity
 public class Student implements Serializable {
+
+    @Id
+    @GeneratedValue
     private String id;
     private String email;
     private Integer age;

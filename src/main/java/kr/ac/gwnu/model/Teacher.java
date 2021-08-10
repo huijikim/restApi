@@ -3,6 +3,9 @@ package kr.ac.gwnu.model;
 import lombok.*;
 import org.apache.ibatis.javassist.runtime.Inner;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,16 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Entity
 public class Teacher {
+
+    @Id
+    @GeneratedValue
     private String id;
     private String email;
     private ArrayList<Student> studentArrayList = new ArrayList<>();
-
-//    public class Outer{
-//        Student student;
-//        public Outer(){
-//            Student student;
-//        }
-//    }
-
 }

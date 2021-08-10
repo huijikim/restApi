@@ -4,12 +4,15 @@ import kr.ac.gwnu.model.Student;
 import kr.ac.gwnu.model.Teacher;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //@Entity
 public interface MemberMapper {
 
     void insertStudents(List<Student> student);
+
+//    void insertStudents(ArrayList<Student> student);
 
     void insertTeacher(Teacher teacher);
 
